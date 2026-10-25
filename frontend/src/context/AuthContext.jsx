@@ -31,10 +31,20 @@ export function AuthProvider({ children }) {
   };
   const register = async (name, email, password) => {
     const r = await api.post('/auth/register', { name, email, password });
+    return r.data;
+  };
+
+  const verify = async (email, code) => {
+    const r = await api.post('/auth/verify', { email, code });
     localStorage.setItem('token', r.data.token);
     setToken(r.data.token);
     api.defaults.headers.common['Authorization'] = `Bearer ${r.data.token}`;
     setUser(r.data.user);
+    return r.data;
+  };
+
+  const resendCode = async (email) => {
+    const r = await api.post('/auth/resend-code', { email });
     return r.data;
   };
   const logout = () => {
@@ -44,5 +54,5 @@ export function AuthProvider({ children }) {
     delete api.defaults.headers.common['Authorization'];
   };
 
-  return <AuthContext.Provider value={{ user, token, loading, login, register, logout }}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={{ user, token, loading, login, register, verify, resendCode, logout }}>{children}</AuthContext.Provider>;
 }

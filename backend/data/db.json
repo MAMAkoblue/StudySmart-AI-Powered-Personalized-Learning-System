@@ -6,6 +6,23 @@
       "email": "jhonkharlvictoriano3@gmail.com",
       "password": "$2a$10$YJ7d3DCj0qUY837FOYnwAO2TSGbbowzq2QJb8UGAxwDXhvo7ymSvW",
       "createdAt": "2026-10-25T06:15:44.697Z"
+    },
+    {
+      "id": "08d4b813-dcd7-4fc3-ad9e-15234aa03619",
+      "name": "Test",
+      "email": "test@example.com",
+      "password": "$2a$10$m0./Pl7NumcVpb09x8/Ecet1ehDjDnjCGnbrKLGysscMQb8qEWVGq",
+      "createdAt": "2026-10-25T07:04:33.664Z"
+    },
+    {
+      "id": "e9547929-36e2-4905-b793-c5b0dfd50195",
+      "name": "Test2",
+      "email": "test2@example.com",
+      "password": "$2a$10$y0Ftb/wVBuVJBMfcgTJca.Zk7QW4H2DtP52VMfSMqOopWRFi2smRO",
+      "createdAt": "2026-10-25T07:06:12.860Z",
+      "verified": true,
+      "verifyCode": null,
+      "verifyExpires": null
     }
   ],
   "materials": [
@@ -333,6 +350,22 @@
         }
       ],
       "flashcardsReviewed": 0
+    },
+    "08d4b813-dcd7-4fc3-ad9e-15234aa03619": {
+      "quizzesTaken": 0,
+      "correct": 0,
+      "total": 0,
+      "topics": {},
+      "sessions": [],
+      "flashcardsReviewed": 0
+    },
+    "e9547929-36e2-4905-b793-c5b0dfd50195": {
+      "quizzesTaken": 0,
+      "correct": 0,
+      "total": 0,
+      "topics": {},
+      "sessions": [],
+      "flashcardsReviewed": 0
     }
   },
   "streaks": {
@@ -340,6 +373,16 @@
       "current": 1,
       "longest": 1,
       "lastDate": "2026-10-25"
+    },
+    "08d4b813-dcd7-4fc3-ad9e-15234aa03619": {
+      "current": 0,
+      "longest": 0,
+      "lastDate": null
+    },
+    "e9547929-36e2-4905-b793-c5b0dfd50195": {
+      "current": 0,
+      "longest": 0,
+      "lastDate": null
     }
   }
 }
