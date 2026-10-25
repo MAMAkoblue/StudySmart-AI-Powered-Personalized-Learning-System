@@ -1,6 +1,6 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { LayoutDashboard, BookOpen, Sparkles, ClipboardList, Layers, CalendarDays, Timer, BarChart3, LogOut, Brain } from 'lucide-react';
+import { LayoutDashboard, BookOpen, Sparkles, ClipboardList, Layers, CalendarDays, Timer, BarChart3, LogOut, Brain, Headphones } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const nav = [
@@ -11,6 +11,7 @@ const nav = [
   { to: '/flashcards', label: 'Flashcards', icon: Layers },
   { to: '/studyplan', label: 'Study Plan', icon: CalendarDays },
   { to: '/pomodoro', label: 'Pomodoro', icon: Timer },
+  { to: '/listen', label: 'Listen', icon: Headphones },
   { to: '/analytics', label: 'Analytics', icon: BarChart3 },
 ];
 

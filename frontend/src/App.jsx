@@ -12,6 +12,7 @@ import TakeQuiz from './pages/TakeQuiz';
 import Flashcards from './pages/Flashcards';
 import StudyPlan from './pages/StudyPlan';
 import Pomodoro from './pages/Pomodoro';
+import Listen from './pages/Listen';
 import Analytics from './pages/Analytics';
 
 function Protected({ children }) {
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="flashcards" element={<Flashcards />} />
         <Route path="studyplan" element={<StudyPlan />} />
         <Route path="pomodoro" element={<Pomodoro />} />
+<Route path="listen" element={<Listen />} />
         <Route path="analytics" element={<Analytics />} />
       </Route>
     </Routes>
