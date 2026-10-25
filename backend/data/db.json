@@ -8,26 +8,258 @@
       "createdAt": "2026-10-25T05:49:13.523Z"
     }
   ],
-  "materials": [],
-  "quizzes": [],
+  "materials": [
+    {
+      "id": "eaf0e61f-53f1-425e-9f60-baf46acf9eaa",
+      "userId": "5b2771ae-c24b-44da-8ead-9dd59f1846d3",
+      "title": "MO-IT115 Homework_ Project Use Case Diagram of STOCKWISE _ A3101 _ ESTRADA, I., DELA CRUZ, P., HARA, J., MADURO, G., VICTORIANO, J..docx",
+      "filename": "MO-IT115 Homework_ Project Use Case Diagram of STOCKWISE _ A3101 _ ESTRADA, I., DELA CRUZ, P., HARA, J., MADURO, G., VICTORIANO, J..docx",
+      "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "text": "\n\nIntellectual Property Notice\n\n\n\nAll course materials, including lectures, class recordings, presentations, handouts, assignments, and assessments, are the exclusive property of Mapua-Malayan Digital College and are protected under Republic Act No. 8293, also known as the Intellectual Property Code of the Philippines (IP Code). Unauthorized downloading, copying, reproduction, distribution, or uploading of any part or whole of this material, in any form or medium, is strictly prohibited. Such actions constitute copyright infringement under Sections 172, 177, and 216 of the IP Code and may result in legal consequences.\n\n\n\nAdditionally, students must comply with the Mapua-Malayan Digital College Student Handbook, particularly with the following provisions:\n\nOffenses Related to MMDC IT:\n\nSection 6.2 – Unauthorized copying of files\n\nSection 6.8 – Extraction of protected, copyrighted, and/or confidential information by electronic means using MMDC IT infrastructure\n\nOffenses Related to MMDC Admin, IT, and Operations:\n\nSection 4.5 – Unauthorized collection or extraction of money, checks, or other instruments of monetary equivalent in connection with matters pertaining to MMDC\n\n\n\nViolations of these policies may result in disciplinary actions ranging from suspension to dismissal, in accordance with the Student Handbook.\n\n\n\nFor permissions or inquiries, please contact MMDC-ISD at isd@mmdc.mcl.edu.ph. \n\n\n\n\n\nMO-IT115 Object-Oriented System Analysis & Design\n\nProject Use Case Diagram\n\n\n\nMilestone 2 Team Leader\n\nIannah Estrada\n\nMembers:\n\nJhon Kharl Victoriano\n\nPatrick Paul Dela Cruz\n\nJeremy Louis Hara\n\nGerard Maduro\n\nProgram and Year Level:\n\nBSIT - 3RD Year\n\n\n\n\n\nProject Context\n\n<Briefly describe the proposed system and its purpose. Use the information from your approved Project Proposal and Milestone 1: High-Level Project Structural Analysis.\n\n\n\nGuide Questions:\n\nWhat problem does the system address?\n\nWho are the intended users and stakeholders?\n\nWhat are the major functions of the system?\n\nHow does the Use Case Diagram help represent the system's behavior?>\n\n\n\nActor Identification\n\n<Identify and describe the actors that interact with the system.\n\nActor\n\nDescription\n\nRelationship to the System\n\n\n\n\n\n\n\n\n\nGuide Questions:\n\nWho interacts with the system?\n\nWhat role does each actor play?\n\nWhich activities or functions are performed by each actor?\n\n\n\nUse Case Identification\n\n<Identify the major use cases represented in the system.\n\nUse Case \n\nPrimary Actor\n\nPurpose\n\n\n\n\n\n\n\n\n\nGuide Questions\n\nWhat functionality does the system provide?\n\nWhich actor initiates each use case?\n\nHow does each use case support the project's objectives?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUse Case Diagram\n\n\n\n\t\n\n\tLucid Art Use Case Diagram\n\n\n\n\n\nUse Case Diagram Analysis\n\n<Analyze the interactions and functionality represented in the diagram.\n\nGuide Questions:\n\nWhat major interactions are represented in the diagram?\n\nHow do the actors interact with the system?\n\nHow does the diagram reflect the project's scope and objectives?\n\nWhich use cases are critical to the operation of the system?\n\nWere any included or extended relationships used? Explain why.>\n\n\n\nUse Case Narrative\n\n<Create a detailed narrative for each major use case identified in the diagram. Replicate the following section for every use case included in your project.>\n\n\n\nIdentification: <Insert Use Case Code No. 1 - Use Case Name No. 1>\n\n<Provide a brief summary of the use case and its purpose within the system.\n\nUse Case ID\n\nAssign a unique identifier (e.g., UC-01, UC-02).\n\nUse Case Name\n\nUse an action-oriented name (e.g., Register Account, Submit Request).\n\nBusiness Goal\n\nWhat user objective or business need does this use case accomplish?\n\n\n\nUse Case Definition\n\nActor\n\nName the actor/s that will be performing this use case.>\n\nDescription\n\n<Provide a high-level explanation of the sequence of steps and the outcome of executing the use case.>\n\nPostconditions\n\n<List the actions that must occur or requirements that must be met before the use case begins. Number each precondition. For example:\n\nUser identity has been authenticated.\n\nUser computer has sufficient free memory available to launch the task.>\n\nPostconditions\n\n<Describe the system's condition at the end of the use case execution. For example:\n\nReport contains only valid email addresses.\n\nPrice of the item in the report has been updated with the new value.>\n\nExpected Outcome\n\n<Specify the expected outcome of the user's activity and the system's reaction. This result should correspond to the user's objective as indicated in the use case.>\n\nExceptions\n\n<Describe any expected error scenarios during use case execution and how the system will respond to those events. Also, indicate how the system will react if the use case execution fails for an unexpected reason.>\n\nIncludes\n\n<List any additional use cases that are part of the use case. Common functionality that appears in several use cases can be separated into a distinct use case that is included by those who require it.>\n\n\n\nNormal Case of Events\n\n<Describe the typical sequence of interactions between the actor and the system.>\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step within the use case narrative (i.e., Step 1>\n\n<Describe the actor's activities. It might be a button click, data entry, selection, navigation, or any other action initiated by the user.>\n\n<Describe how the system responds to user input. It might include presenting data, conducting computations, providing outputs, or initiating other system processes.>\n\n\n\nAlternative Course of Events\n\n<Describe valid alternative scenarios or variations in the process.>\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step.>\n\n<Describe the alternative action performed by the actor.>\n\n<Describe how the system responds to the user input.>\n\n\n\n\n\nIdentification: <Insert Use Case Code No. 2 - Use Case Name No. 2>\n\n<Provide a brief summary of the use case and its purpose within the system.\n\nUse Case ID\n\n<A labeled use case can be used to trace functional requirements. Assign a unique identity to each use case in a use case narrative. For example, 1.0>\n\nUse Case Name\n\n<State a concise, results-oriented name for the use case. When writing, make sure to include an action verb and a noun. For example, view part number information.>\n\n\n\nUse Case Definition\n\nActor\n\n<An actor is an individual or entity outside the defined software system that interacts with the system and executes use cases to complete tasks. Name the actor(s) that will be performing this use case.>\n\nDescription\n\n<Provide a high-level explanation of the sequence of steps and the outcome of executing the use case..>\n\nPreconditions\n\n<List the actions that must occur or requirements that must be met before the use case begins. Number each precondition. For example:\n\nUser identity has been authenticated.\n\nUser computer has sufficient free memory available to launch the task.>\n\nPostconditions\n\n<Describe the system's condition at the end of the use case execution. For example:\n\nReport contains only valid email addresses.\n\nPrice of the item in the report has been updated with the new value.>\n\nExpected Outcome\n\n<Specify the expected outcome of the user's activity and the system's reaction. This result should correspond to the user's objective as indicated in the use case..>\n\nExceptions\n\n<Describe any expected error scenarios during use case execution and how the system will respond to those events. Also, indicate how the system will react if the use case execution fails for an unexpected reason.>\n\nIncludes\n\n<List any additional use cases that are part of the use case. Common functionality that appears in several use cases can be separated into a distinct use case that is included by those who require it..>\n\n\n\nNormal Case of Events\n\n<Describe the typical sequence of interactions between the actor and the system.>\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step within the use case narrative (i.e., Step 1>\n\n<Describe the actor's activities. It might be a button click, data entry, selection, navigation, or any other action initiated by the user.>\n\n<Describe how the system responds to user input. It might include presenting data, conducting computations, providing outputs, or initiating other system processes.>\n\n\n\nAlternative Course of Events\n\n<Describe valid alternative scenarios or variations in the process.>\n\n\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step.>\n\n<Describe the alternative action performed by the actor.>\n\n<Describe how the system responds to the user input.>\n\n\n\nIdentification: <Insert Use Case Code No. 3 - Use Case Name No. 3>\n\n<Provide a brief summary of the use case and its purpose within the system.\n\nUse Case ID\n\n<A labeled use case can be used to trace functional requirements. Assign a unique identity to each use case in a use case narrative. For example, 1.0>\n\nUse Case Name\n\n<State a concise, results-oriented name for the use case. When writing, make sure to include an action verb and a noun. For example, view part number information.>\n\n\n\nUse Case Definition\n\nActor\n\n<An actor is an individual or entity outside the defined software system that interacts with the system and executes use cases to complete tasks. Name the actor(s) that will be performing this use case.>\n\nDescription\n\n<Provide a high-level explanation of the sequence of steps and the outcome of executing the use case..>\n\nPreconditions\n\n<List the actions that must occur or requirements that must be met before the use case begins. Number each precondition. For example:\n\nUser identity has been authenticated.\n\nUser computer has sufficient free memory available to launch the task.>\n\nPostconditions\n\n<Describe the system's condition at the end of the use case execution. For example:\n\nReport contains only valid email addresses.\n\nPrice of the item in the report has been updated with the new value.>\n\nExpected Outcome\n\n<Specify the expected outcome of the user's activity and the system's reaction. This result should correspond to the user's objective as indicated in the use case..>\n\nExceptions\n\n<Describe any expected error scenarios during use case execution and how the system will respond to those events. Also, indicate how the system will react if the use case execution fails for an unexpected reason.>\n\nIncludes\n\n<List any additional use cases that are part of the use case. Common functionality that appears in several use cases can be separated into a distinct use case that is included by those who require it..>\n\n\n\nNormal Case of Events\n\n<Describe the typical sequence of interactions between the actor and the system.>\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step within the use case narrative (i.e., Step 1>\n\n<Describe the actor's activities. It might be a button click, data entry, selection, navigation, or any other action initiated by the user.>\n\n<Describe how the system responds to user input. It might include presenting data, conducting computations, providing outputs, or initiating other system processes.>\n\n\n\nAlternative Course of Events\n\n<Describe valid alternative scenarios or variations in the process.>\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step.>\n\n<Describe the alternative action performed by the actor.>\n\n<Describe how the system responds to the user input.>\n\n\n\n\n\n",
+      "createdAt": "2026-10-25T05:52:24.428Z"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "933c6fc2-81d8-4e0a-907c-14377b1fe3e6",
+      "userId": "5b2771ae-c24b-44da-8ead-9dd59f1846d3",
+      "materialId": "eaf0e61f-53f1-425e-9f60-baf46acf9eaa",
+      "title": "Quiz: MO-IT115 Homework_ Project Use Case Diagram of STOCKWISE _ A3101 _ ESTRADA, I., DELA CRUZ, P., HARA, J., MADURO, G., VICTORIANO, J..docx",
+      "questions": [
+        {
+          "id": "dc3e9706-7d76-4241-839b-325cfdc71567",
+          "question": "8293, also known as the Intellectual Property _____ of the Philippines (IP Code).",
+          "options": [
+            "any",
+            "code",
+            "describe",
+            "data"
+          ],
+          "answer": "code",
+          "explanation": "8293, also known as the Intellectual Property Code of the Philippines (IP Code)."
+        },
+        {
+          "id": "973fe824-0fb5-47e0-8cf5-e460ff3b6596",
+          "question": "Unauthorized downloading, copying, reproduction, distribution, or uploading of _____ part or whole of this material, in any form or medium, is strictly prohibited.",
+          "options": [
+            "any",
+            "set",
+            "part",
+            "expected"
+          ],
+          "answer": "any",
+          "explanation": "Unauthorized downloading, copying, reproduction, distribution, or uploading of any part or whole of this material, in any form or medium, is strictly prohibited."
+        },
+        {
+          "id": "7e4bb52b-7c5d-474e-aadf-5f4f88c5fdd9",
+          "question": "Such actions constitute copyright infringement under Sections 172, 177, and 216 of the IP _____ and may result in legal consequences.",
+          "options": [
+            "execution",
+            "diagram",
+            "step",
+            "code"
+          ],
+          "answer": "code",
+          "explanation": "Such actions constitute copyright infringement under Sections 172, 177, and 216 of the IP Code and may result in legal consequences."
+        },
+        {
+          "id": "9587fc23-9743-40c8-a12d-10e538c1ddb1",
+          "question": "MO-IT115 Object-Oriented System Analysis & Design Project _____ Case Diagram Milestone 2 Team Leader Iannah Estrada Members: Jhon Kharl Victoriano Patrick Paul Dela Cruz Jeremy Louis Hara Gerard Maduro Program and Year Level: BSIT - 3RD Year Project Context <Briefly describe the proposed system and its purpose.",
+          "options": [
+            "list",
+            "user",
+            "user's",
+            "use"
+          ],
+          "answer": "use",
+          "explanation": "MO-IT115 Object-Oriented System Analysis & Design Project Use Case Diagram Milestone 2 Team Leader Iannah Estrada Members: Jhon Kharl Victoriano Patrick Paul Dela Cruz Jeremy Louis Hara Gerard Maduro Program and Year Level: BSIT - 3RD Year Project Context <Briefly describe the proposed system and its purpose."
+        },
+        {
+          "id": "59c37971-2676-4560-b453-518f5a4e8a97",
+          "question": "_____ the information from your approved Project Proposal and Milestone 1: High-Level Project Structural Analysis.",
+          "options": [
+            "use",
+            "system's",
+            "describe",
+            "list"
+          ],
+          "answer": "use",
+          "explanation": "Use the information from your approved Project Proposal and Milestone 1: High-Level Project Structural Analysis."
+        },
+        {
+          "id": "bbea5b51-c91f-440e-a833-a11d8055c204",
+          "question": "Guide Questions: What problem does the _____ address?",
+          "options": [
+            "example",
+            "data",
+            "system",
+            "code"
+          ],
+          "answer": "system",
+          "explanation": "Guide Questions: What problem does the system address?"
+        },
+        {
+          "id": "098f304e-f9ec-4663-9e08-6bbacde98b3b",
+          "question": "What are the major functions of the _____?",
+          "options": [
+            "system",
+            "expected",
+            "other",
+            "unique"
+          ],
+          "answer": "system",
+          "explanation": "What are the major functions of the system?"
+        },
+        {
+          "id": "77235787-cd02-415c-bcb2-b42953aabcee",
+          "question": "How does the _____ Case Diagram help represent the system's behavior?> Actor Identification <Identify and describe the actors that interact with the system.",
+          "options": [
+            "scenarios",
+            "expected",
+            "diagram",
+            "use"
+          ],
+          "answer": "use",
+          "explanation": "How does the Use Case Diagram help represent the system's behavior?> Actor Identification <Identify and describe the actors that interact with the system."
+        },
+        {
+          "id": "366fb4e1-9f48-4221-9ef6-fa58d374a02e",
+          "question": "Actor Description Relationship to the _____ Guide Questions: Who interacts with the system?",
+          "options": [
+            "part",
+            "events",
+            "system",
+            "provide"
+          ],
+          "answer": "system",
+          "explanation": "Actor Description Relationship to the System Guide Questions: Who interacts with the system?"
+        },
+        {
+          "id": "4a4cf7ea-57c0-4c97-a0e5-ad0667ca511b",
+          "question": "What role does each _____ play?",
+          "options": [
+            "identifier",
+            "actor",
+            "provide",
+            "data"
+          ],
+          "answer": "actor",
+          "explanation": "What role does each actor play?"
+        }
+      ],
+      "createdAt": "2026-10-25T05:52:48.517Z",
+      "attempts": [
+        {
+          "id": "42d71d61-1937-4a8e-b1f6-969bef231004",
+          "score": 9,
+          "total": 10,
+          "submittedAt": "2026-10-25T05:55:03.046Z",
+          "results": [
+            {
+              "questionId": "dc3e9706-7d76-4241-839b-325cfdc71567",
+              "selected": "any",
+              "correct": "code",
+              "isCorrect": false,
+              "explanation": "8293, also known as the Intellectual Property Code of the Philippines (IP Code)."
+            },
+            {
+              "questionId": "973fe824-0fb5-47e0-8cf5-e460ff3b6596",
+              "selected": "any",
+              "correct": "any",
+              "isCorrect": true,
+              "explanation": "Unauthorized downloading, copying, reproduction, distribution, or uploading of any part or whole of this material, in any form or medium, is strictly prohibited."
+            },
+            {
+              "questionId": "7e4bb52b-7c5d-474e-aadf-5f4f88c5fdd9",
+              "selected": "code",
+              "correct": "code",
+              "isCorrect": true,
+              "explanation": "Such actions constitute copyright infringement under Sections 172, 177, and 216 of the IP Code and may result in legal consequences."
+            },
+            {
+              "questionId": "9587fc23-9743-40c8-a12d-10e538c1ddb1",
+              "selected": "use",
+              "correct": "use",
+              "isCorrect": true,
+              "explanation": "MO-IT115 Object-Oriented System Analysis & Design Project Use Case Diagram Milestone 2 Team Leader Iannah Estrada Members: Jhon Kharl Victoriano Patrick Paul Dela Cruz Jeremy Louis Hara Gerard Maduro Program and Year Level: BSIT - 3RD Year Project Context <Briefly describe the proposed system and its purpose."
+            },
+            {
+              "questionId": "59c37971-2676-4560-b453-518f5a4e8a97",
+              "selected": "use",
+              "correct": "use",
+              "isCorrect": true,
+              "explanation": "Use the information from your approved Project Proposal and Milestone 1: High-Level Project Structural Analysis."
+            },
+            {
+              "questionId": "bbea5b51-c91f-440e-a833-a11d8055c204",
+              "selected": "system",
+              "correct": "system",
+              "isCorrect": true,
+              "explanation": "Guide Questions: What problem does the system address?"
+            },
+            {
+              "questionId": "098f304e-f9ec-4663-9e08-6bbacde98b3b",
+              "selected": "system",
+              "correct": "system",
+              "isCorrect": true,
+              "explanation": "What are the major functions of the system?"
+            },
+            {
+              "questionId": "77235787-cd02-415c-bcb2-b42953aabcee",
+              "selected": "use",
+              "correct": "use",
+              "isCorrect": true,
+              "explanation": "How does the Use Case Diagram help represent the system's behavior?> Actor Identification <Identify and describe the actors that interact with the system."
+            },
+            {
+              "questionId": "366fb4e1-9f48-4221-9ef6-fa58d374a02e",
+              "selected": "system",
+              "correct": "system",
+              "isCorrect": true,
+              "explanation": "Actor Description Relationship to the System Guide Questions: Who interacts with the system?"
+            },
+            {
+              "questionId": "4a4cf7ea-57c0-4c97-a0e5-ad0667ca511b",
+              "selected": "actor",
+              "correct": "actor",
+              "isCorrect": true,
+              "explanation": "What role does each actor play?"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "flashcardSets": [],
   "studyPlans": [],
   "pomodoroSessions": [],
   "progress": {
     "5b2771ae-c24b-44da-8ead-9dd59f1846d3": {
-      "quizzesTaken": 0,
-      "correct": 0,
-      "total": 0,
-      "topics": {},
-      "sessions": [],
+      "quizzesTaken": 1,
+      "correct": 9,
+      "total": 10,
+      "topics": {
+        "Quiz: MO-IT115 Homework_ Project Use Case Diagram of STOCKWISE _ A3101 _ ESTRADA, I., DELA CRUZ, P., HARA, J., MADURO, G., VICTORIANO, J..docx": {
+          "correct": 9,
+          "total": 10
+        }
+      },
+      "sessions": [
+        {
+          "type": "quiz",
+          "score": 9,
+          "total": 10,
+          "date": "2026-10-25T05:55:03.046Z"
+        }
+      ],
       "flashcardsReviewed": 0
     }
   },
   "streaks": {
     "5b2771ae-c24b-44da-8ead-9dd59f1846d3": {
-      "current": 0,
-      "longest": 0,
-      "lastDate": null
+      "current": 1,
+      "longest": 1,
+      "lastDate": "2026-10-25"
     }
   }
 }
