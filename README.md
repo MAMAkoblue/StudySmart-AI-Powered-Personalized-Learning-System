@@ -24,6 +24,13 @@ npm run dev
 ```
 Runs on http://localhost:5173 (proxies /api to backend)
 
+## Email verification (registration)
+Set these environment variables on the backend to send real verification codes to Gmail:
+- `EMAIL_USER` — your Gmail address (e.g. you@gmail.com)
+- `EMAIL_PASS` — a Gmail App Password (Google Account → Security → 2-Step Verification → App passwords)
+- Optional: `EMAIL_FROM` (defaults to EMAIL_USER)
+
+Without these, registration still works in dev mode: the code is shown on the registration screen and logged to the server console. On Render, add `EMAIL_USER` and `EMAIL_PASS` in the service environment variables.
 ## Optional AI
 Set `OPENAI_API_KEY` (and optionally `OPENAI_MODEL`) in the backend environment to use OpenAI for generation. Without it, StudySmart uses a built-in offline heuristic generator, so the app works fully without any API key.
 
