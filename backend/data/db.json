@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "5b2771ae-c24b-44da-8ead-9dd59f1846d3",
+      "name": "Jhon Kharl Victoriano",
+      "email": "jhonkharlvictoriano3@gmail.com",
+      "password": "$2a$10$WsHwJWp.P0a7ZuahHQtMB.puywTCnyeSAIGVEiwkw.J87grvTa6bq",
+      "createdAt": "2026-10-25T05:49:13.523Z"
+    }
+  ],
+  "materials": [],
+  "quizzes": [],
+  "flashcardSets": [],
+  "studyPlans": [],
+  "pomodoroSessions": [],
+  "progress": {
+    "5b2771ae-c24b-44da-8ead-9dd59f1846d3": {
+      "quizzesTaken": 0,
+      "correct": 0,
+      "total": 0,
+      "topics": {},
+      "sessions": [],
+      "flashcardsReviewed": 0
+    }
+  },
+  "streaks": {
+    "5b2771ae-c24b-44da-8ead-9dd59f1846d3": {
+      "current": 0,
+      "longest": 0,
+      "lastDate": null
+    }
+  }
+}
