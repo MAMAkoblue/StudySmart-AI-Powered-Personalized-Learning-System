@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { api } from '../context/AuthContext';
+import { Volume2 } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 export default function TakeQuiz() {
@@ -15,6 +16,14 @@ export default function TakeQuiz() {
   if (!quiz) return <div className="text-slate-500">Loading...</div>;
 
   const select = (qid, opt) => setAnswers(a => ({ ...a, [qid]: opt }));
+
+  const speak = (text) => {
+    if (!('speechSynthesis' in window)) { alert('Text-to-speech not supported in this browser.'); return; }
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.95;
+    window.speechSynthesis.speak(u);
+  };
 
   const submit = async () => {
     if (Object.keys(answers).length < quiz.questions.length) {
@@ -58,7 +67,12 @@ export default function TakeQuiz() {
       <div className="space-y-6">
         {quiz.questions.map((q, i) => (
           <div key={q.id} className="card">
-            <div className="font-medium text-slate-800 mb-3">{i + 1}. {q.question}</div>
+            <div className="flex items-start justify-between gap-3 mb-3">
+              <div className="font-medium text-slate-800">{i + 1}. {q.question}</div>
+              <button onClick={() => speak(`${q.question}. Options: ${q.options.join('. ')}`)} className="shrink-0 p-2 rounded-lg bg-slate-100 hover:bg-brand-100 text-slate-600 hover:text-brand-600 transition" title="Read aloud">
+                <Volume2 size={18} />
+              </button>
+            </div>
             <div className="grid gap-2">
               {q.options.map(opt => (
                 <button key={opt} onClick={() => select(q.id, opt)}

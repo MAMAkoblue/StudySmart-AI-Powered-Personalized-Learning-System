@@ -1,229 +1,239 @@
 {
   "users": [
     {
-      "id": "5b2771ae-c24b-44da-8ead-9dd59f1846d3",
+      "id": "459c96ac-38fb-4561-87b2-161418b9d749",
       "name": "Jhon Kharl Victoriano",
       "email": "jhonkharlvictoriano3@gmail.com",
-      "password": "$2a$10$WsHwJWp.P0a7ZuahHQtMB.puywTCnyeSAIGVEiwkw.J87grvTa6bq",
-      "createdAt": "2026-10-25T05:49:13.523Z"
+      "password": "$2a$10$YJ7d3DCj0qUY837FOYnwAO2TSGbbowzq2QJb8UGAxwDXhvo7ymSvW",
+      "createdAt": "2026-10-25T06:15:44.697Z"
     }
   ],
   "materials": [
     {
-      "id": "eaf0e61f-53f1-425e-9f60-baf46acf9eaa",
-      "userId": "5b2771ae-c24b-44da-8ead-9dd59f1846d3",
-      "title": "MO-IT115 Homework_ Project Use Case Diagram of STOCKWISE _ A3101 _ ESTRADA, I., DELA CRUZ, P., HARA, J., MADURO, G., VICTORIANO, J..docx",
-      "filename": "MO-IT115 Homework_ Project Use Case Diagram of STOCKWISE _ A3101 _ ESTRADA, I., DELA CRUZ, P., HARA, J., MADURO, G., VICTORIANO, J..docx",
-      "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-      "text": "\n\nIntellectual Property Notice\n\n\n\nAll course materials, including lectures, class recordings, presentations, handouts, assignments, and assessments, are the exclusive property of Mapua-Malayan Digital College and are protected under Republic Act No. 8293, also known as the Intellectual Property Code of the Philippines (IP Code). Unauthorized downloading, copying, reproduction, distribution, or uploading of any part or whole of this material, in any form or medium, is strictly prohibited. Such actions constitute copyright infringement under Sections 172, 177, and 216 of the IP Code and may result in legal consequences.\n\n\n\nAdditionally, students must comply with the Mapua-Malayan Digital College Student Handbook, particularly with the following provisions:\n\nOffenses Related to MMDC IT:\n\nSection 6.2 – Unauthorized copying of files\n\nSection 6.8 – Extraction of protected, copyrighted, and/or confidential information by electronic means using MMDC IT infrastructure\n\nOffenses Related to MMDC Admin, IT, and Operations:\n\nSection 4.5 – Unauthorized collection or extraction of money, checks, or other instruments of monetary equivalent in connection with matters pertaining to MMDC\n\n\n\nViolations of these policies may result in disciplinary actions ranging from suspension to dismissal, in accordance with the Student Handbook.\n\n\n\nFor permissions or inquiries, please contact MMDC-ISD at isd@mmdc.mcl.edu.ph. \n\n\n\n\n\nMO-IT115 Object-Oriented System Analysis & Design\n\nProject Use Case Diagram\n\n\n\nMilestone 2 Team Leader\n\nIannah Estrada\n\nMembers:\n\nJhon Kharl Victoriano\n\nPatrick Paul Dela Cruz\n\nJeremy Louis Hara\n\nGerard Maduro\n\nProgram and Year Level:\n\nBSIT - 3RD Year\n\n\n\n\n\nProject Context\n\n<Briefly describe the proposed system and its purpose. Use the information from your approved Project Proposal and Milestone 1: High-Level Project Structural Analysis.\n\n\n\nGuide Questions:\n\nWhat problem does the system address?\n\nWho are the intended users and stakeholders?\n\nWhat are the major functions of the system?\n\nHow does the Use Case Diagram help represent the system's behavior?>\n\n\n\nActor Identification\n\n<Identify and describe the actors that interact with the system.\n\nActor\n\nDescription\n\nRelationship to the System\n\n\n\n\n\n\n\n\n\nGuide Questions:\n\nWho interacts with the system?\n\nWhat role does each actor play?\n\nWhich activities or functions are performed by each actor?\n\n\n\nUse Case Identification\n\n<Identify the major use cases represented in the system.\n\nUse Case \n\nPrimary Actor\n\nPurpose\n\n\n\n\n\n\n\n\n\nGuide Questions\n\nWhat functionality does the system provide?\n\nWhich actor initiates each use case?\n\nHow does each use case support the project's objectives?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUse Case Diagram\n\n\n\n\t\n\n\tLucid Art Use Case Diagram\n\n\n\n\n\nUse Case Diagram Analysis\n\n<Analyze the interactions and functionality represented in the diagram.\n\nGuide Questions:\n\nWhat major interactions are represented in the diagram?\n\nHow do the actors interact with the system?\n\nHow does the diagram reflect the project's scope and objectives?\n\nWhich use cases are critical to the operation of the system?\n\nWere any included or extended relationships used? Explain why.>\n\n\n\nUse Case Narrative\n\n<Create a detailed narrative for each major use case identified in the diagram. Replicate the following section for every use case included in your project.>\n\n\n\nIdentification: <Insert Use Case Code No. 1 - Use Case Name No. 1>\n\n<Provide a brief summary of the use case and its purpose within the system.\n\nUse Case ID\n\nAssign a unique identifier (e.g., UC-01, UC-02).\n\nUse Case Name\n\nUse an action-oriented name (e.g., Register Account, Submit Request).\n\nBusiness Goal\n\nWhat user objective or business need does this use case accomplish?\n\n\n\nUse Case Definition\n\nActor\n\nName the actor/s that will be performing this use case.>\n\nDescription\n\n<Provide a high-level explanation of the sequence of steps and the outcome of executing the use case.>\n\nPostconditions\n\n<List the actions that must occur or requirements that must be met before the use case begins. Number each precondition. For example:\n\nUser identity has been authenticated.\n\nUser computer has sufficient free memory available to launch the task.>\n\nPostconditions\n\n<Describe the system's condition at the end of the use case execution. For example:\n\nReport contains only valid email addresses.\n\nPrice of the item in the report has been updated with the new value.>\n\nExpected Outcome\n\n<Specify the expected outcome of the user's activity and the system's reaction. This result should correspond to the user's objective as indicated in the use case.>\n\nExceptions\n\n<Describe any expected error scenarios during use case execution and how the system will respond to those events. Also, indicate how the system will react if the use case execution fails for an unexpected reason.>\n\nIncludes\n\n<List any additional use cases that are part of the use case. Common functionality that appears in several use cases can be separated into a distinct use case that is included by those who require it.>\n\n\n\nNormal Case of Events\n\n<Describe the typical sequence of interactions between the actor and the system.>\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step within the use case narrative (i.e., Step 1>\n\n<Describe the actor's activities. It might be a button click, data entry, selection, navigation, or any other action initiated by the user.>\n\n<Describe how the system responds to user input. It might include presenting data, conducting computations, providing outputs, or initiating other system processes.>\n\n\n\nAlternative Course of Events\n\n<Describe valid alternative scenarios or variations in the process.>\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step.>\n\n<Describe the alternative action performed by the actor.>\n\n<Describe how the system responds to the user input.>\n\n\n\n\n\nIdentification: <Insert Use Case Code No. 2 - Use Case Name No. 2>\n\n<Provide a brief summary of the use case and its purpose within the system.\n\nUse Case ID\n\n<A labeled use case can be used to trace functional requirements. Assign a unique identity to each use case in a use case narrative. For example, 1.0>\n\nUse Case Name\n\n<State a concise, results-oriented name for the use case. When writing, make sure to include an action verb and a noun. For example, view part number information.>\n\n\n\nUse Case Definition\n\nActor\n\n<An actor is an individual or entity outside the defined software system that interacts with the system and executes use cases to complete tasks. Name the actor(s) that will be performing this use case.>\n\nDescription\n\n<Provide a high-level explanation of the sequence of steps and the outcome of executing the use case..>\n\nPreconditions\n\n<List the actions that must occur or requirements that must be met before the use case begins. Number each precondition. For example:\n\nUser identity has been authenticated.\n\nUser computer has sufficient free memory available to launch the task.>\n\nPostconditions\n\n<Describe the system's condition at the end of the use case execution. For example:\n\nReport contains only valid email addresses.\n\nPrice of the item in the report has been updated with the new value.>\n\nExpected Outcome\n\n<Specify the expected outcome of the user's activity and the system's reaction. This result should correspond to the user's objective as indicated in the use case..>\n\nExceptions\n\n<Describe any expected error scenarios during use case execution and how the system will respond to those events. Also, indicate how the system will react if the use case execution fails for an unexpected reason.>\n\nIncludes\n\n<List any additional use cases that are part of the use case. Common functionality that appears in several use cases can be separated into a distinct use case that is included by those who require it..>\n\n\n\nNormal Case of Events\n\n<Describe the typical sequence of interactions between the actor and the system.>\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step within the use case narrative (i.e., Step 1>\n\n<Describe the actor's activities. It might be a button click, data entry, selection, navigation, or any other action initiated by the user.>\n\n<Describe how the system responds to user input. It might include presenting data, conducting computations, providing outputs, or initiating other system processes.>\n\n\n\nAlternative Course of Events\n\n<Describe valid alternative scenarios or variations in the process.>\n\n\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step.>\n\n<Describe the alternative action performed by the actor.>\n\n<Describe how the system responds to the user input.>\n\n\n\nIdentification: <Insert Use Case Code No. 3 - Use Case Name No. 3>\n\n<Provide a brief summary of the use case and its purpose within the system.\n\nUse Case ID\n\n<A labeled use case can be used to trace functional requirements. Assign a unique identity to each use case in a use case narrative. For example, 1.0>\n\nUse Case Name\n\n<State a concise, results-oriented name for the use case. When writing, make sure to include an action verb and a noun. For example, view part number information.>\n\n\n\nUse Case Definition\n\nActor\n\n<An actor is an individual or entity outside the defined software system that interacts with the system and executes use cases to complete tasks. Name the actor(s) that will be performing this use case.>\n\nDescription\n\n<Provide a high-level explanation of the sequence of steps and the outcome of executing the use case..>\n\nPreconditions\n\n<List the actions that must occur or requirements that must be met before the use case begins. Number each precondition. For example:\n\nUser identity has been authenticated.\n\nUser computer has sufficient free memory available to launch the task.>\n\nPostconditions\n\n<Describe the system's condition at the end of the use case execution. For example:\n\nReport contains only valid email addresses.\n\nPrice of the item in the report has been updated with the new value.>\n\nExpected Outcome\n\n<Specify the expected outcome of the user's activity and the system's reaction. This result should correspond to the user's objective as indicated in the use case..>\n\nExceptions\n\n<Describe any expected error scenarios during use case execution and how the system will respond to those events. Also, indicate how the system will react if the use case execution fails for an unexpected reason.>\n\nIncludes\n\n<List any additional use cases that are part of the use case. Common functionality that appears in several use cases can be separated into a distinct use case that is included by those who require it..>\n\n\n\nNormal Case of Events\n\n<Describe the typical sequence of interactions between the actor and the system.>\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step within the use case narrative (i.e., Step 1>\n\n<Describe the actor's activities. It might be a button click, data entry, selection, navigation, or any other action initiated by the user.>\n\n<Describe how the system responds to user input. It might include presenting data, conducting computations, providing outputs, or initiating other system processes.>\n\n\n\nAlternative Course of Events\n\n<Describe valid alternative scenarios or variations in the process.>\n\nStep\n\nActor Action\n\nSystem Response\n\n<Set the unique identifier for the step.>\n\n<Describe the alternative action performed by the actor.>\n\n<Describe how the system responds to the user input.>\n\n\n\n\n\n",
-      "createdAt": "2026-10-25T05:52:24.428Z"
+      "id": "7dc20046-f7be-422a-8346-e6c1ffbb0938",
+      "userId": "459c96ac-38fb-4561-87b2-161418b9d749",
+      "title": "aurora.pdf",
+      "filename": "aurora.pdf",
+      "mimetype": "application/pdf",
+      "text": "\n\n\n\nContents\n01\nSabang Beach \u0000Baler\u0000\n02\nDicasalarin Cove & Baler\nLighthouse\n03\nDitumabo Mother Falls\n04\nDingalan Viewpoint \u0000Batanes of\nthe East)\n05\nDiguisit Beach & Rock\nFormations\n06\nErmita Hill View Deck\n07\nMillennium Tree \u0000Maria Aurora)\n08\nHeritage Walk: Baler Church +\nMuseo de Baler\n\nSabang Beach Baler\nBirthplace of Philippine Surfing\nWhat it is & Why go\nSabang Beach is synonymous with the origins of surfing in the\nPhilippines. Characterized by its broad, gray-sand shoreline and\nconsistent waves coming from the Pacific Ocean, it offers an accessible\nand energetic atmosphere perfect for surf enthusiasts and beachgoers\nalike.\nHighlights\nOct–March Swells: The prime season for reliable, larger waves suited\nfor serious surfers.\nSurf Schools: Dozens of surf instructors and board rentals line the\nbeachfront, making it incredibly accessible to start learning.\nWalkable Coastline: A long, flat shoreline ideal for leisurely strolls,\nvibrant photography, and stunning sunrise/sunset views.\nPractical Notes\nBest for beginners to intermediate surfers. The waves are more forgiving in the\nsummer months. It is highly recommended to go early in the morning to beat\nthe crowds and catch the calmest winds.\n\nDRAMATIC COASTLINE\nDicasalarin Cove &\nBaler Lighthouse\nA breathtaking blend of rugged cliffs, serene\nwaters, and a historic vantage point. Discover why\nthis secluded paradise is a must-visit.\nHighlights\nStunning cliffside viewpoints\nPhotogenic coastline drive\nBest experienced in clear weather\nPRACTICAL NOTES\nTiming:Go mid-morning for optimal lighting.\nPreparation:Bring sun protection and plenty of\nwater.\nLogistics:Plan travel time accordingly as roads\ncan be steep.\n\nDitumabo Mother Falls\nThe Iconic Waterfall Trek in San Luis\n\u0000140 ft\nWATERFALL DROP\n30\u000045 min\nTREK (ONE WAY)\nHighlights\nExciting river crossings and scenic bamboo bridges\nMisty, refreshing swim spot right at the base of the falls\nPractical Notes\nWear sturdy, grippy footwear for navigating wet and slippery rocks\nPrepare for a moderately challenging but highly rewarding hike\n\nDingalan Viewpoint Batanes of\nthe East)\nBatanes of the East\nWhat it is & Why go\nOften referred to as the \"Batanes of the East,\" the Dingalan Viewpoint\nfeatures rolling green hills that abruptly meet the crashing waves of the\nPacific Ocean. It offers a breathtaking, windswept vista that provides a\nmajestic coastal encounter unlike any other in the region.\nHighlights\nRidge-and-Ocean Panorama: Sweeping, dramatic views of the\ncoastline from the crest of the rolling hills.\nPhoto Spots Along Trail: Numerous picturesque vantage points along\nthe hike perfect for capturing the landscape.\nContrast to Baler Surf Town: A serene, elevated escape that serves as\na beautiful contrast to the bustling surf culture nearby.\nPractical Notes\nStart your hike early to beat the midday sun and avoid the crowds. Remember\nto pack plenty of water to stay hydrated and a light layer to protect against the\nstrong coastal winds at the peak.\n\nSUNRISE ON THE ANIAO ISLETS\nDiguisit Beach & Rock\nFormations\nExperience the raw beauty of Aurora's coastline\nwhere dramatic rock formations rise from the\ncrashing waves. A perfect destination for early\nrisers seeking a spectacular morning view.\nHighlights\nRock formations & islet silhouettes\nGolden hour photography\nCoastal breeze and wave soundscape\nPRACTICAL NOTES\nTiming:Best visited at sunrise for optimal views.\nSafety:Watch your footing near wet, slippery\nrocks.\n\nErmita Hill View Deck\n360° Baler Bay Perspective\n360°\nPANORAMIC VIEW\nEarly / Late\nBEST VISIT TIME\nHighlights\nPanoramic bay lookouts\nOrientation stop for North Coast drive\nWindy open vantage\nPractical Notes\nVisit early morning or late afternoon for the best experience\nBring a hat to protect yourself from the sun at the open vantage\n\nMillennium Tree (Maria Aurora)\nA 600\u0000Year-Old Balete\n\u0000600\nYEARS OLD\nHollow Core\nVISITORS CAN STAND INSIDE\nHighlights\n\u0000600 years old\nHollow core visitors can stand inside\nDistinct inland stop\nPractical Notes\nRespect preservation rules\nVisit in daylight\n\nHeritage Walk: Baler Church + Museo de Baler\nExplore the iconic Baler Church and discover local artifacts at\nMuseo de Baler.\nWhat it is & Why go\nImmerse yourself in the rich history and culture of Aurora by walking\nthrough its most significant historical sites. It's the perfect way to\nunderstand the heritage that shaped the region.\nKey Highlights\nBaler Church: A historic landmark known worldwide for the Siege of\nBaler.\nMuseo de Baler: Houses fascinating exhibits and well-preserved\nhistorical artifacts.\nPlaza Walk: Best paired with a leisurely town plaza stroll and tasting\nlocal snacks.\nPractical Notes\n•Dress respectfully when visiting the church (avoid revealing clothing).\n•Go earlier in the day for a quieter and more intimate museum experience.\n\n",
+      "createdAt": "2026-10-25T06:16:02.616Z"
     }
   ],
   "quizzes": [
     {
-      "id": "933c6fc2-81d8-4e0a-907c-14377b1fe3e6",
-      "userId": "5b2771ae-c24b-44da-8ead-9dd59f1846d3",
-      "materialId": "eaf0e61f-53f1-425e-9f60-baf46acf9eaa",
-      "title": "Quiz: MO-IT115 Homework_ Project Use Case Diagram of STOCKWISE _ A3101 _ ESTRADA, I., DELA CRUZ, P., HARA, J., MADURO, G., VICTORIANO, J..docx",
+      "id": "a3949b68-010f-4164-9775-f2492d6d0a97",
+      "userId": "459c96ac-38fb-4561-87b2-161418b9d749",
+      "materialId": "7dc20046-f7be-422a-8346-e6c1ffbb0938",
+      "title": "Quiz: aurora.pdf",
       "questions": [
         {
-          "id": "dc3e9706-7d76-4241-839b-325cfdc71567",
-          "question": "8293, also known as the Intellectual Property _____ of the Philippines (IP Code).",
+          "id": "1ad7dd4f-a7c1-4ef5-abfe-beb34413a176",
+          "type": "cloze",
+          "question": "It is highly recommended to go _____ in the morning to beat the crowds and catch the calmest winds.",
           "options": [
-            "any",
-            "code",
-            "describe",
-            "data"
+            "early",
+            "lighthouse",
+            "practical",
+            "baler"
           ],
-          "answer": "code",
-          "explanation": "8293, also known as the Intellectual Property Code of the Philippines (IP Code)."
+          "answer": "early",
+          "explanation": "It is highly recommended to go early in the morning to beat the crowds and catch the calmest winds."
         },
         {
-          "id": "973fe824-0fb5-47e0-8cf5-e460ff3b6596",
-          "question": "Unauthorized downloading, copying, reproduction, distribution, or uploading of _____ part or whole of this material, in any form or medium, is strictly prohibited.",
+          "id": "a11bc6d0-0bcc-439b-be44-be0eb6894eca",
+          "type": "cloze",
+          "question": "_____ Schools: Dozens of surf instructors and board rentals line the beachfront, making it incredibly accessible to start learning.",
           "options": [
-            "any",
-            "set",
-            "part",
-            "expected"
+            "viewpoint",
+            "why",
+            "surf",
+            "waves"
           ],
-          "answer": "any",
-          "explanation": "Unauthorized downloading, copying, reproduction, distribution, or uploading of any part or whole of this material, in any form or medium, is strictly prohibited."
+          "answer": "surf",
+          "explanation": "Surf Schools: Dozens of surf instructors and board rentals line the beachfront, making it incredibly accessible to start learning."
         },
         {
-          "id": "7e4bb52b-7c5d-474e-aadf-5f4f88c5fdd9",
-          "question": "Such actions constitute copyright infringement under Sections 172, 177, and 216 of the IP _____ and may result in legal consequences.",
+          "id": "6385fb40-1ba6-4dcb-a352-57ae88da0a96",
+          "type": "cloze",
+          "question": "Discover _____ this secluded paradise is a must-visit.",
           "options": [
-            "execution",
-            "diagram",
-            "step",
-            "code"
+            "best",
+            "church",
+            "why",
+            "dingalan"
           ],
-          "answer": "code",
-          "explanation": "Such actions constitute copyright infringement under Sections 172, 177, and 216 of the IP Code and may result in legal consequences."
+          "answer": "why",
+          "explanation": "Discover why this secluded paradise is a must-visit."
         },
         {
-          "id": "9587fc23-9743-40c8-a12d-10e538c1ddb1",
-          "question": "MO-IT115 Object-Oriented System Analysis & Design Project _____ Case Diagram Milestone 2 Team Leader Iannah Estrada Members: Jhon Kharl Victoriano Patrick Paul Dela Cruz Jeremy Louis Hara Gerard Maduro Program and Year Level: BSIT - 3RD Year Project Context <Briefly describe the proposed system and its purpose.",
+          "id": "29ea66f4-9ef7-4de9-ab18-a8fb6454dffb",
+          "type": "cloze",
+          "question": "_____ Notes Best for beginners to intermediate surfers.",
           "options": [
-            "list",
-            "user",
-            "user's",
-            "use"
+            "vantage",
+            "dicasalarin",
+            "practical",
+            "morning"
           ],
-          "answer": "use",
-          "explanation": "MO-IT115 Object-Oriented System Analysis & Design Project Use Case Diagram Milestone 2 Team Leader Iannah Estrada Members: Jhon Kharl Victoriano Patrick Paul Dela Cruz Jeremy Louis Hara Gerard Maduro Program and Year Level: BSIT - 3RD Year Project Context <Briefly describe the proposed system and its purpose."
+          "answer": "practical",
+          "explanation": "Practical Notes Best for beginners to intermediate surfers."
         },
         {
-          "id": "59c37971-2676-4560-b453-518f5a4e8a97",
-          "question": "_____ the information from your approved Project Proposal and Milestone 1: High-Level Project Structural Analysis.",
+          "id": "3fce0eda-713e-4a93-9075-dd6ad094c846",
+          "type": "cloze",
+          "question": "_____ Stunning cliffside viewpoints Photogenic coastline drive Best experienced in clear weather PRACTICAL NOTES Timing:Go mid-morning for optimal lighting.",
           "options": [
-            "use",
-            "system's",
-            "describe",
-            "list"
+            "perfect",
+            "coastline",
+            "highlights",
+            "sabang"
           ],
-          "answer": "use",
-          "explanation": "Use the information from your approved Project Proposal and Milestone 1: High-Level Project Structural Analysis."
+          "answer": "highlights",
+          "explanation": "Highlights Stunning cliffside viewpoints Photogenic coastline drive Best experienced in clear weather PRACTICAL NOTES Timing:Go mid-morning for optimal lighting."
         },
         {
-          "id": "bbea5b51-c91f-440e-a833-a11d8055c204",
-          "question": "Guide Questions: What problem does the _____ address?",
+          "id": "6f2e8639-e8b6-4471-9167-caa71d805790",
+          "type": "cloze",
+          "question": "The _____ are more forgiving in the summer months.",
           "options": [
-            "example",
-            "data",
-            "system",
-            "code"
+            "church",
+            "waves",
+            "east",
+            "falls"
           ],
-          "answer": "system",
-          "explanation": "Guide Questions: What problem does the system address?"
+          "answer": "waves",
+          "explanation": "The waves are more forgiving in the summer months."
         },
         {
-          "id": "098f304e-f9ec-4663-9e08-6bbacde98b3b",
-          "question": "What are the major functions of the _____?",
+          "id": "86e683eb-7e5d-4468-99b5-776047bdfe7f",
+          "type": "cloze",
+          "question": "_____ Oct–March Swells: The prime season for reliable, larger waves suited for serious surfers.",
           "options": [
-            "system",
-            "expected",
-            "other",
-            "unique"
+            "best",
+            "viewpoint",
+            "morning",
+            "highlights"
           ],
-          "answer": "system",
-          "explanation": "What are the major functions of the system?"
+          "answer": "highlights",
+          "explanation": "Highlights Oct–March Swells: The prime season for reliable, larger waves suited for serious surfers."
         },
         {
-          "id": "77235787-cd02-415c-bcb2-b42953aabcee",
-          "question": "How does the _____ Case Diagram help represent the system's behavior?> Actor Identification <Identify and describe the actors that interact with the system.",
+          "id": "d85e1bee-1560-4643-b821-619f8ba00161",
+          "type": "cloze",
+          "question": "DRAMATIC COASTLINE Dicasalarin Cove & _____ Lighthouse A breathtaking blend of rugged cliffs, serene waters, and a historic vantage point.",
           "options": [
-            "scenarios",
-            "expected",
-            "diagram",
-            "use"
+            "sun",
+            "baler",
+            "aurora",
+            "falls"
           ],
-          "answer": "use",
-          "explanation": "How does the Use Case Diagram help represent the system's behavior?> Actor Identification <Identify and describe the actors that interact with the system."
+          "answer": "baler",
+          "explanation": "DRAMATIC COASTLINE Dicasalarin Cove & Baler Lighthouse A breathtaking blend of rugged cliffs, serene waters, and a historic vantage point."
         },
         {
-          "id": "366fb4e1-9f48-4221-9ef6-fa58d374a02e",
-          "question": "Actor Description Relationship to the _____ Guide Questions: Who interacts with the system?",
+          "id": "35cbe1a2-0b67-4053-8ebe-6aca26691c19",
+          "type": "cloze",
+          "question": "Walkable _____: A long, flat shoreline ideal for leisurely strolls, vibrant photography, and stunning sunrise/sunset views.",
           "options": [
-            "part",
-            "events",
-            "system",
-            "provide"
+            "lighthouse",
+            "morning",
+            "viewpoint",
+            "coastline"
           ],
-          "answer": "system",
-          "explanation": "Actor Description Relationship to the System Guide Questions: Who interacts with the system?"
+          "answer": "coastline",
+          "explanation": "Walkable Coastline: A long, flat shoreline ideal for leisurely strolls, vibrant photography, and stunning sunrise/sunset views."
         },
         {
-          "id": "4a4cf7ea-57c0-4c97-a0e5-ad0667ca511b",
-          "question": "What role does each _____ play?",
+          "id": "fe2efbd4-10c1-481a-b0c3-04e721769a9b",
+          "type": "cloze",
+          "question": "Characterized by its broad, gray-sand shoreline and consistent _____ coming from the Pacific Ocean, it offers an accessible and energetic atmosphere perfect for surf enthusiasts and beachgoers alike.",
           "options": [
-            "identifier",
-            "actor",
-            "provide",
-            "data"
+            "waves",
+            "notes",
+            "practical",
+            "views"
           ],
-          "answer": "actor",
-          "explanation": "What role does each actor play?"
+          "answer": "waves",
+          "explanation": "Characterized by its broad, gray-sand shoreline and consistent waves coming from the Pacific Ocean, it offers an accessible and energetic atmosphere perfect for surf enthusiasts and beachgoers alike."
         }
       ],
-      "createdAt": "2026-10-25T05:52:48.517Z",
+      "createdAt": "2026-10-25T06:16:49.868Z",
       "attempts": [
         {
-          "id": "42d71d61-1937-4a8e-b1f6-969bef231004",
-          "score": 9,
+          "id": "e87c7794-a3ee-4eae-9c19-58f5c3ecf298",
+          "score": 8,
           "total": 10,
-          "submittedAt": "2026-10-25T05:55:03.046Z",
+          "submittedAt": "2026-10-25T06:20:34.364Z",
           "results": [
             {
-              "questionId": "dc3e9706-7d76-4241-839b-325cfdc71567",
-              "selected": "any",
-              "correct": "code",
+              "questionId": "1ad7dd4f-a7c1-4ef5-abfe-beb34413a176",
+              "selected": "early",
+              "correct": "early",
+              "isCorrect": true,
+              "explanation": "It is highly recommended to go early in the morning to beat the crowds and catch the calmest winds."
+            },
+            {
+              "questionId": "a11bc6d0-0bcc-439b-be44-be0eb6894eca",
+              "selected": "surf",
+              "correct": "surf",
+              "isCorrect": true,
+              "explanation": "Surf Schools: Dozens of surf instructors and board rentals line the beachfront, making it incredibly accessible to start learning."
+            },
+            {
+              "questionId": "6385fb40-1ba6-4dcb-a352-57ae88da0a96",
+              "selected": "why",
+              "correct": "why",
+              "isCorrect": true,
+              "explanation": "Discover why this secluded paradise is a must-visit."
+            },
+            {
+              "questionId": "29ea66f4-9ef7-4de9-ab18-a8fb6454dffb",
+              "selected": "practical",
+              "correct": "practical",
+              "isCorrect": true,
+              "explanation": "Practical Notes Best for beginners to intermediate surfers."
+            },
+            {
+              "questionId": "3fce0eda-713e-4a93-9075-dd6ad094c846",
+              "selected": "perfect",
+              "correct": "highlights",
               "isCorrect": false,
-              "explanation": "8293, also known as the Intellectual Property Code of the Philippines (IP Code)."
+              "explanation": "Highlights Stunning cliffside viewpoints Photogenic coastline drive Best experienced in clear weather PRACTICAL NOTES Timing:Go mid-morning for optimal lighting."
             },
             {
-              "questionId": "973fe824-0fb5-47e0-8cf5-e460ff3b6596",
-              "selected": "any",
-              "correct": "any",
+              "questionId": "6f2e8639-e8b6-4471-9167-caa71d805790",
+              "selected": "waves",
+              "correct": "waves",
               "isCorrect": true,
-              "explanation": "Unauthorized downloading, copying, reproduction, distribution, or uploading of any part or whole of this material, in any form or medium, is strictly prohibited."
+              "explanation": "The waves are more forgiving in the summer months."
             },
             {
-              "questionId": "7e4bb52b-7c5d-474e-aadf-5f4f88c5fdd9",
-              "selected": "code",
-              "correct": "code",
-              "isCorrect": true,
-              "explanation": "Such actions constitute copyright infringement under Sections 172, 177, and 216 of the IP Code and may result in legal consequences."
+              "questionId": "86e683eb-7e5d-4468-99b5-776047bdfe7f",
+              "selected": "viewpoint",
+              "correct": "highlights",
+              "isCorrect": false,
+              "explanation": "Highlights Oct–March Swells: The prime season for reliable, larger waves suited for serious surfers."
             },
             {
-              "questionId": "9587fc23-9743-40c8-a12d-10e538c1ddb1",
-              "selected": "use",
-              "correct": "use",
+              "questionId": "d85e1bee-1560-4643-b821-619f8ba00161",
+              "selected": "baler",
+              "correct": "baler",
               "isCorrect": true,
-              "explanation": "MO-IT115 Object-Oriented System Analysis & Design Project Use Case Diagram Milestone 2 Team Leader Iannah Estrada Members: Jhon Kharl Victoriano Patrick Paul Dela Cruz Jeremy Louis Hara Gerard Maduro Program and Year Level: BSIT - 3RD Year Project Context <Briefly describe the proposed system and its purpose."
+              "explanation": "DRAMATIC COASTLINE Dicasalarin Cove & Baler Lighthouse A breathtaking blend of rugged cliffs, serene waters, and a historic vantage point."
             },
             {
-              "questionId": "59c37971-2676-4560-b453-518f5a4e8a97",
-              "selected": "use",
-              "correct": "use",
+              "questionId": "35cbe1a2-0b67-4053-8ebe-6aca26691c19",
+              "selected": "coastline",
+              "correct": "coastline",
               "isCorrect": true,
-              "explanation": "Use the information from your approved Project Proposal and Milestone 1: High-Level Project Structural Analysis."
+              "explanation": "Walkable Coastline: A long, flat shoreline ideal for leisurely strolls, vibrant photography, and stunning sunrise/sunset views."
             },
             {
-              "questionId": "bbea5b51-c91f-440e-a833-a11d8055c204",
-              "selected": "system",
-              "correct": "system",
+              "questionId": "fe2efbd4-10c1-481a-b0c3-04e721769a9b",
+              "selected": "waves",
+              "correct": "waves",
               "isCorrect": true,
-              "explanation": "Guide Questions: What problem does the system address?"
-            },
-            {
-              "questionId": "098f304e-f9ec-4663-9e08-6bbacde98b3b",
-              "selected": "system",
-              "correct": "system",
-              "isCorrect": true,
-              "explanation": "What are the major functions of the system?"
-            },
-            {
-              "questionId": "77235787-cd02-415c-bcb2-b42953aabcee",
-              "selected": "use",
-              "correct": "use",
-              "isCorrect": true,
-              "explanation": "How does the Use Case Diagram help represent the system's behavior?> Actor Identification <Identify and describe the actors that interact with the system."
-            },
-            {
-              "questionId": "366fb4e1-9f48-4221-9ef6-fa58d374a02e",
-              "selected": "system",
-              "correct": "system",
-              "isCorrect": true,
-              "explanation": "Actor Description Relationship to the System Guide Questions: Who interacts with the system?"
-            },
-            {
-              "questionId": "4a4cf7ea-57c0-4c97-a0e5-ad0667ca511b",
-              "selected": "actor",
-              "correct": "actor",
-              "isCorrect": true,
-              "explanation": "What role does each actor play?"
+              "explanation": "Characterized by its broad, gray-sand shoreline and consistent waves coming from the Pacific Ocean, it offers an accessible and energetic atmosphere perfect for surf enthusiasts and beachgoers alike."
             }
           ]
         }
@@ -234,29 +244,29 @@
   "studyPlans": [],
   "pomodoroSessions": [],
   "progress": {
-    "5b2771ae-c24b-44da-8ead-9dd59f1846d3": {
+    "459c96ac-38fb-4561-87b2-161418b9d749": {
       "quizzesTaken": 1,
-      "correct": 9,
+      "correct": 8,
       "total": 10,
       "topics": {
-        "Quiz: MO-IT115 Homework_ Project Use Case Diagram of STOCKWISE _ A3101 _ ESTRADA, I., DELA CRUZ, P., HARA, J., MADURO, G., VICTORIANO, J..docx": {
-          "correct": 9,
+        "Quiz: aurora.pdf": {
+          "correct": 8,
           "total": 10
         }
       },
       "sessions": [
         {
           "type": "quiz",
-          "score": 9,
+          "score": 8,
           "total": 10,
-          "date": "2026-10-25T05:55:03.046Z"
+          "date": "2026-10-25T06:20:34.364Z"
         }
       ],
       "flashcardsReviewed": 0
     }
   },
   "streaks": {
-    "5b2771ae-c24b-44da-8ead-9dd59f1846d3": {
+    "459c96ac-38fb-4561-87b2-161418b9d749": {
       "current": 1,
       "longest": 1,
       "lastDate": "2026-10-25"

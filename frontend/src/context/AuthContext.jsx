@@ -5,7 +5,7 @@ const AuthContext = createContext(null);
 export const useAuth = () => useContext(AuthContext);
 
 const API = '/api';
-export const api = axios.create({ baseURL: API });
+export const api = axios.create({ baseURL: API, timeout: 15000 });
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);

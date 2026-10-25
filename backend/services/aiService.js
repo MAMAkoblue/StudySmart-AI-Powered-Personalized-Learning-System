@@ -71,6 +71,8 @@ export function generateQuizHeuristic(text, count = 10) {
   const terms = keyTerms(text, 40);
   const questions = [];
   const used = new Set();
+
+  // Type 1: cloze deletion
   for (const s of sentences) {
     if (questions.length >= count) break;
     const term = terms.find(t => new RegExp('\\b' + t + '\\b', 'i').test(s));
@@ -83,8 +85,30 @@ export function generateQuizHeuristic(text, count = 10) {
     used.add(key);
     const distractors = pickDistractors(term, terms, 3);
     const options = shuffle([term, ...distractors]);
-    questions.push({ id: uuidv4(), question: stem, options, answer: term, explanation: s });
+    questions.push({ id: uuidv4(), type: 'cloze', question: stem, options, answer: term, explanation: s });
   }
+
+  // Type 2: exam-style TRUE statement with twisted distractors
+  for (const s of sentences) {
+    if (questions.length >= count) break;
+    // pick a key term to twist
+    const term = terms.find(t => new RegExp('\\b' + t + '\\b', 'i').test(s));
+    if (!term) continue;
+    const others = terms.filter(t => t !== term);
+    if (others.length < 3) continue;
+    const twisted = [];
+    for (let i = 0; i < 3; i++) {
+      const t = others[i % others.length];
+      twisted.push(s.replace(new RegExp('\\b' + term + '\\b', 'i'), t));
+    }
+    const key = ('exam:' + s).toLowerCase();
+    if (used.has(key)) continue;
+    used.add(key);
+    const options = shuffle([s, ...twisted]);
+    questions.push({ id: uuidv4(), type: 'comprehension', question: 'Which of the following statements is TRUE according to the material?', options, answer: s, explanation: s });
+  }
+
+  // Fallback: if still short, use sentence-as-answer MCQs
   if (questions.length < Math.min(4, sentences.length)) {
     for (const s of sentences) {
       if (questions.length >= count) break;
@@ -94,16 +118,18 @@ export function generateQuizHeuristic(text, count = 10) {
       const stem = s.replace(term, '_____');
       const distractors = pickDistractors(term, terms, 3);
       const options = shuffle([term, ...distractors]);
-      questions.push({ id: uuidv4(), question: stem, options, answer: term, explanation: s });
+      questions.push({ id: uuidv4(), type: 'cloze', question: stem, options, answer: term, explanation: s });
     }
   }
-  return questions.slice(0, count);
+
+  return shuffle(questions).slice(0, count);
 }
+
 async function openaiGenerate(text, type, count) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) return null;
   const prompt = type === 'quiz'
-    ? `Generate ${count} multiple-choice questions from the following study material. Return ONLY valid JSON array of objects with keys: question, options (array of 4 strings), answer (correct option string), explanation. Material:\n${text.slice(0, 6000)}`
+    ? `Generate ${count} exam-style multiple-choice questions from the following study material. Mix recall, comprehension, and application questions. Paraphrase questions; do not just quote sentences. Make distractors plausible but clearly wrong. Return ONLY valid JSON array of objects with keys: question, options (array of 4 strings), answer (correct option string), explanation. Material:\n${text.slice(0, 6000)}`
     : `Generate ${count} flashcards from the following study material. Return ONLY valid JSON array of objects with keys: front, back. Material:\n${text.slice(0, 6000)}`;
   try {
     const resp = await fetch('https://api.openai.com/v1/chat/completions', {
