@@ -9,6 +9,10 @@ services:
         generateValue: true
       - key: DATA_DIR
         value: /data
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
     disk:
       name: studysmart-data
       mountPath: /data
