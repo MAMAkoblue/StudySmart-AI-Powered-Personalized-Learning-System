@@ -240,7 +240,77 @@
       ]
     }
   ],
-  "flashcardSets": [],
+  "flashcardSets": [
+    {
+      "id": "50be6ea2-7f16-4fa6-b143-f46ea8376472",
+      "userId": "459c96ac-38fb-4561-87b2-161418b9d749",
+      "materialId": "7dc20046-f7be-422a-8346-e6c1ffbb0938",
+      "title": "Flashcards: aurora.pdf",
+      "cards": [
+        {
+          "id": "20e7ee70-7e10-42d8-9236-6f87faeb79f7",
+          "front": "Characterized by its broad, gray-sand shoreline and consistent ______ coming from the Pacific Ocean, it offers an accessible and energetic atmosphere perfect for surf enthusiasts and beachgoers alike.",
+          "back": "waves",
+          "hint": "Fill in the blank"
+        },
+        {
+          "id": "ed6db218-9ee5-45d3-b15e-c4fdf7d5aa5a",
+          "front": "______ Oct–March Swells: The prime season for reliable, larger waves suited for serious surfers.",
+          "back": "highlights",
+          "hint": "Fill in the blank"
+        },
+        {
+          "id": "aade4beb-850e-4b67-9671-e307c6988b5e",
+          "front": "______ Schools: Dozens of surf instructors and board rentals line the beachfront, making it incredibly accessible to start learning.",
+          "back": "surf",
+          "hint": "Fill in the blank"
+        },
+        {
+          "id": "c53fec19-ac7a-410e-93e6-9c2a42855325",
+          "front": "Walkable ______: A long, flat shoreline ideal for leisurely strolls, vibrant photography, and stunning sunrise/sunset views.",
+          "back": "coastline",
+          "hint": "Fill in the blank"
+        },
+        {
+          "id": "e2556329-76a7-490e-93a5-0922b1294f87",
+          "front": "______ Notes Best for beginners to intermediate surfers.",
+          "back": "practical",
+          "hint": "Fill in the blank"
+        },
+        {
+          "id": "2a656457-f338-4ca6-a92e-b5fdcd9f506a",
+          "front": "The ______ are more forgiving in the summer months.",
+          "back": "waves",
+          "hint": "Fill in the blank"
+        },
+        {
+          "id": "6b896696-0c69-4121-a0db-1d72e820e77d",
+          "front": "It is highly recommended to go ______ in the morning to beat the crowds and catch the calmest winds.",
+          "back": "early",
+          "hint": "Fill in the blank"
+        },
+        {
+          "id": "33a458f4-4a96-46b4-876d-54ac42e7a000",
+          "front": "DRAMATIC COASTLINE Dicasalarin Cove & ______ Lighthouse A breathtaking blend of rugged cliffs, serene waters, and a historic vantage point.",
+          "back": "baler",
+          "hint": "Fill in the blank"
+        },
+        {
+          "id": "f119a4b0-f74e-4680-995d-31b67c65ba26",
+          "front": "Discover ______ this secluded paradise is a must-visit.",
+          "back": "why",
+          "hint": "Fill in the blank"
+        },
+        {
+          "id": "0f9eeab2-3ed0-4c8f-937f-eb3a6e18fd44",
+          "front": "______ Stunning cliffside viewpoints Photogenic coastline drive Best experienced in clear weather PRACTICAL NOTES Timing:Go mid-morning for optimal lighting.",
+          "back": "highlights",
+          "hint": "Fill in the blank"
+        }
+      ],
+      "createdAt": "2026-10-25T06:21:12.337Z"
+    }
+  ],
   "studyPlans": [],
   "pomodoroSessions": [],
   "progress": {
