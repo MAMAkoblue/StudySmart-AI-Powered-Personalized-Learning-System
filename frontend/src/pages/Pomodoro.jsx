@@ -12,9 +12,7 @@ export default function Pomodoro() {
 
   const durations = { focus: 25 * 60, break: 5 * 60 };
 
-  useEffect(() => {
-    api.get('/pomodoro/stats').then(r => setStats(r.data));
-  }, []);
+  useEffect(() => { api.get('/pomodoro/stats').then(r => setStats(r.data || {})).catch(() => setStats({})); }, []);
 
   useEffect(() => {
     if (running) {
@@ -34,10 +32,12 @@ export default function Pomodoro() {
   }, [running]);
 
   const handleComplete = async () => {
-    const dur = mode === 'focus' ? 25 : 5;
-    await api.post('/pomodoro/session', { duration: dur, type: mode, completed: true });
-    toast.success(mode === 'focus' ? 'Focus session complete! Take a break.' : 'Break over. Back to work!');
-    const r = await api.get('/pomodoro/stats'); setStats(r.data);
+    try {
+      const dur = mode === 'focus' ? 25 : 5;
+      await api.post('/pomodoro/session', { duration: dur, type: mode, completed: true });
+      toast.success(mode === 'focus' ? 'Focus session complete! Take a break.' : 'Break over. Back to work!');
+      const r = await api.get('/pomodoro/stats'); setStats(r.data);
+    } catch (e) { toast.error('Failed to save session'); }
   };
 
   const switchMode = (m) => { setMode(m); setSeconds(durations[m]); setRunning(false); };
@@ -68,12 +68,12 @@ export default function Pomodoro() {
           <h3 className="font-semibold mb-4 flex items-center gap-2"><Coffee size={18}/> Stats</h3>
           {stats && (
             <>
-              <div className="text-3xl font-bold text-slate-800">{stats.count}</div>
+              <div className="text-3xl font-bold text-slate-800">{(stats?.count || 0)}</div>
               <div className="text-sm text-slate-500 mb-2">sessions completed</div>
-              <div className="text-3xl font-bold text-slate-800">{stats.totalMinutes}</div>
+              <div className="text-3xl font-bold text-slate-800">{(stats?.totalMinutes || 0)}</div>
               <div className="text-sm text-slate-500 mb-4">total minutes</div>
               <div className="space-y-1 max-h-48 overflow-auto">
-                {stats.sessions.map((s, i) => (
+                {(stats?.sessions || []).map((s, i) => (
                   <div key={i} className="text-xs text-slate-500 flex justify-between border-b border-slate-100 py-1">
                     <span>{s.type} • {s.duration}m</span>
                     <span>{new Date(s.createdAt).toLocaleString()}</span>

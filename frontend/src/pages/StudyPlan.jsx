@@ -7,10 +7,7 @@ export default function StudyPlan() {
   const [plan, setPlan] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const load = async () => {
-    const r = await api.get('/studyplans/latest');
-    setPlan(r.data);
-  };
+  const load = async () => { try { const r = await api.get('/studyplans/latest'); setPlan(r.data); } catch { setPlan(null); } };
   useEffect(() => { load(); }, []);
 
   const generate = async () => {
@@ -29,17 +26,17 @@ export default function StudyPlan() {
       {!plan && <div className="text-slate-400">No plan yet. Generate one based on your performance.</div>}
       {plan && (
         <div>
-          {plan.plan.recommendation && <div className="card mb-4 bg-brand-50 border-brand-200"><div className="font-medium text-brand-700">{plan.plan.recommendation}</div></div>}
-          {plan.plan.weakTopics?.length > 0 && (
+          {(plan?.plan?.recommendation) && <div className="card mb-4 bg-brand-50 border-brand-200"><div className="font-medium text-brand-700">{(plan?.plan?.recommendation)}</div></div>}
+          {(plan?.plan?.weakTopics?.length) > 0 && (
             <div className="card mb-4">
               <h3 className="font-semibold mb-2">Weak topics to focus</h3>
               <div className="flex flex-wrap gap-2">
-                {plan.plan.weakTopics.map(w => <span key={w.topic} className="px-3 py-1 rounded-full bg-red-100 text-red-700 text-sm">{w.topic} ({Math.round((w.accuracy||0)*100)}%)</span>)}
+                {(plan?.plan?.weakTopics || []).map(w => <span key={w.topic} className="px-3 py-1 rounded-full bg-red-100 text-red-700 text-sm">{w.topic} ({Math.round((w.accuracy||0)*100)}%)</span>)}
               </div>
             </div>
           )}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {plan.plan.days.map(d => (
+            {(plan?.plan?.days || []).map(d => (
               <div key={d.day} className="card">
                 <div className="flex items-center gap-2 mb-3">
                   <CalendarDays className="text-brand-600" />

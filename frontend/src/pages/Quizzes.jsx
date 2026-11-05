@@ -5,12 +5,12 @@ import { ClipboardList } from 'lucide-react';
 
 export default function Quizzes() {
   const [quizzes, setQuizzes] = useState([]);
-  useEffect(() => { api.get('/quizzes').then(r => setQuizzes(r.data)); }, []);
+  useEffect(() => { api.get('/quizzes').then(r => setQuizzes(r.data || [])).catch(() => setQuizzes([])); }, []);
   return (
     <div>
       <h1 className="text-3xl font-bold text-slate-800 mb-6">Quizzes</h1>
       <div className="grid md:grid-cols-2 gap-4">
-        {quizzes.map(q => (
+        {(quizzes || []).map(q => (
           <div key={q.id} className="card">
             <div className="flex items-center gap-3 mb-2">
               <ClipboardList className="text-brand-600" />

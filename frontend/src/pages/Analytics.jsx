@@ -6,10 +6,10 @@ const COLORS = ['#6366f1', '#8b5cf6', '#ec4899', '#f59e0b', '#10b981'];
 
 export default function Analytics() {
   const [data, setData] = useState(null);
-  useEffect(() => { api.get('/analytics').then(r => setData(r.data)); }, []);
+  useEffect(() => { api.get('/analytics').then(r => setData(r.data || {})).catch(() => setData({})); }, []);
   if (!data) return <div className="text-slate-500">Loading...</div>;
 
-  const topicData = Object.entries(data.topics || {}).map(([k, v]) => ({ name: k.slice(0, 20), accuracy: v.total ? Math.round((v.correct / v.total) * 100) : 0, total: v.total }));
+  const topicData = Object.entries(data.topics || {}).map(([k, v]) => ({ name: k.slice(0, 20), accuracy: v.total ? Math.round((v.correct / v.total) * 100) : 0, total: v.total || 0 }));
 
   const attempts = data.attempts || [];
   const scoreData = attempts.map((a, i) => ({ name: `#${i + 1}`, score: a.total ? Math.round((a.score / a.total) * 100) : 0 }));

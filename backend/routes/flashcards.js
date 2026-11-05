@@ -9,7 +9,7 @@ router.use(authMiddleware);
 router.get('/', (req, res) => {
   const db = getDb();
   const list = db.data.flashcardSets.filter(s => s.userId === req.user.id).map(s => ({
-    id: s.id, title: s.title, materialId: s.materialId, cardCount: s.cards.length, createdAt: s.createdAt
+    id: s.id, title: s.title, materialId: s.materialId, cardCount: (s.cards || []).length, createdAt: s.createdAt
   }));
   res.json(list);
 });
@@ -24,11 +24,10 @@ router.get('/:id', (req, res) => {
 router.post('/:id/review', async (req, res) => {
   const { known } = req.body; // count known
   const db = getDb();
-  const p = db.data.progress[req.user.id];
-  if (p) {
-    p.flashcardsReviewed = (p.flashcardsReviewed || 0) + (req.body.reviewed || 0);
-    p.sessions.push({ type: 'flashcards', reviewed: req.body.reviewed || 0, date: new Date().toISOString() });
-  }
+  const p = db.data.progress[req.user.id] || (db.data.progress[req.user.id] = { quizzesTaken: 0, correct: 0, total: 0, topics: {}, sessions: [], flashcardsReviewed: 0 });
+  p.flashcardsReviewed = (p.flashcardsReviewed || 0) + (Number(req.body.reviewed) || 0);
+  p.sessions = p.sessions || [];
+  p.sessions.push({ type: 'flashcards', reviewed: Number(req.body.reviewed) || 0, date: new Date().toISOString() });
   updateStreak(db, req.user.id);
   await save();
   res.json({ ok: true });

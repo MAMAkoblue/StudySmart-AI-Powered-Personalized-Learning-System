@@ -11,7 +11,7 @@ export default function Materials() {
   const [uploading, setUploading] = useState(false);
   const fileRef = useRef();
 
-  const load = () => api.get('/materials').then(r => setMaterials(r.data));
+  const load = () => api.get('/materials').then(r => setMaterials(r.data || [])).catch(() => setMaterials([]));
   useEffect(load, []);
 
   const uploadFile = async () => {
@@ -62,7 +62,7 @@ export default function Materials() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-4">
-        {materials.map(m => (
+        {(materials || []).map(m => (
           <div key={m.id} className="card flex items-start justify-between">
             <div className="flex gap-3">
               <div className="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center"><FileText size={20}/></div>

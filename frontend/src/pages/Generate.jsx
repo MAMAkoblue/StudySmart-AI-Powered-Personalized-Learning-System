@@ -12,7 +12,7 @@ export default function Generate() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
 
-  useEffect(() => { api.get('/materials').then(r => setMaterials(r.data)); }, []);
+  useEffect(() => { api.get('/materials').then(r => setMaterials(r.data || [])).catch(() => setMaterials([])); }, []);
 
   const generate = async () => {
     if (!materialId) return toast.error('Select a material');
@@ -34,7 +34,7 @@ export default function Generate() {
         <label className="block text-sm font-medium text-slate-600 mb-1">Material</label>
         <select className="input mb-4" value={materialId} onChange={e => setMaterialId(e.target.value)}>
           <option value="">Select material...</option>
-          {materials.map(m => <option key={m.id} value={m.id}>{m.title}</option>)}
+          {(materials || []).map(m => <option key={m.id} value={m.id}>{m.title}</option>)}
         </select>
         <label className="block text-sm font-medium text-slate-600 mb-1">Type</label>
         <div className="flex gap-2 mb-4">
@@ -53,12 +53,12 @@ export default function Generate() {
           <h2 className="font-semibold mb-2">{result.title}</h2>
           {type === 'quiz' ? (
             <div>
-              <p className="text-sm text-slate-500 mb-3">{result.questions.length} questions generated.</p>
+              <p className="text-sm text-slate-500 mb-3">{(result?.questions?.length || 0)} questions generated.</p>
               <Link to="/quizzes" className="btn-primary">Go to Quizzes</Link>
             </div>
           ) : (
             <div>
-              <p className="text-sm text-slate-500 mb-3">{result.cards.length} flashcards generated.</p>
+              <p className="text-sm text-slate-500 mb-3">{(result?.cards?.length || 0)} flashcards generated.</p>
               <Link to="/flashcards" className="btn-primary">Go to Flashcards</Link>
             </div>
           )}

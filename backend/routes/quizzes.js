@@ -9,7 +9,7 @@ router.use(authMiddleware);
 router.get('/', (req, res) => {
   const db = getDb();
   const list = db.data.quizzes.filter(q => q.userId === req.user.id).map(q => ({
-    id: q.id, title: q.title, materialId: q.materialId, questionCount: q.questions.length, createdAt: q.createdAt, attempts: q.attempts.length
+    id: q.id, title: q.title, materialId: q.materialId, questionCount: (q.questions || []).length, createdAt: q.createdAt, attempts: (q.attempts || []).length
   }));
   res.json(list);
 });
@@ -27,32 +27,37 @@ router.post('/:id/submit', async (req, res) => {
   const db = getDb();
   const q = db.data.quizzes.find(x => x.id === req.params.id && x.userId === req.user.id);
   if (!q) return res.status(404).json({ error: 'Not found' });
+  const qs = Array.isArray(q.questions) ? q.questions : [];
   let correct = 0;
-  const results = q.questions.map(qu => {
-    const sel = answers[qu.id];
+  const results = qs.map(qu => {
+    const sel = answers?.[qu.id];
     const isCorrect = sel === qu.answer;
     if (isCorrect) correct++;
     return { questionId: qu.id, selected: sel, correct: qu.answer, isCorrect, explanation: qu.explanation };
   });
-  const attempt = { id: uuidv4(), score: correct, total: q.questions.length, submittedAt: new Date().toISOString(), results };
+  const attempt = { id: uuidv4(), score: correct, total: qs.length, submittedAt: new Date().toISOString(), results };
+  q.attempts = Array.isArray(q.attempts) ? q.attempts : [];
   q.attempts.push(attempt);
 
   // update progress
+  if (!db.data.progress[req.user.id]) {
+    db.data.progress[req.user.id] = { quizzesTaken: 0, correct: 0, total: 0, topics: {}, sessions: [], flashcardsReviewed: 0 };
+  }
   const p = db.data.progress[req.user.id];
-  p.quizzesTaken += 1;
-  p.correct += correct;
-  p.total += q.questions.length;
-  // topics: derive from material title? use quiz title
+  p.quizzesTaken = (p.quizzesTaken || 0) + 1;
+  p.correct = (p.correct || 0) + correct;
+  p.total = (p.total || 0) + qs.length;
   const topic = q.title;
+  p.topics = p.topics || {};
   p.topics[topic] = p.topics[topic] || { correct: 0, total: 0 };
   p.topics[topic].correct += correct;
-  p.topics[topic].total += q.questions.length;
-  // sessions
-  p.sessions.push({ type: 'quiz', score: correct, total: q.questions.length, date: new Date().toISOString() });
+  p.topics[topic].total += qs.length;
+  p.sessions = p.sessions || [];
+  p.sessions.push({ type: 'quiz', score: correct, total: qs.length, date: new Date().toISOString() });
   // streak
   updateStreak(db, req.user.id);
   await save();
-  res.json({ score: correct, total: q.questions.length, results });
+  res.json({ score: correct, total: qs.length, results });
 });
 
 function updateStreak(db, userId) {

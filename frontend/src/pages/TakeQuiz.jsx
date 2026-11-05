@@ -26,7 +26,7 @@ export default function TakeQuiz() {
   };
 
   const submit = async () => {
-    if (Object.keys(answers).length < quiz.questions.length) {
+    if (Object.keys(answers).length < (quiz.questions?.length || 0)) {
       if (!confirm('Some questions unanswered. Submit anyway?')) return;
     }
     setSubmitting(true);
@@ -43,10 +43,10 @@ export default function TakeQuiz() {
         <h1 className="text-3xl font-bold text-slate-800 mb-4">Results</h1>
         <div className="card mb-6">
           <div className="text-4xl font-bold text-brand-600">{result.score}/{result.total}</div>
-          <div className="text-slate-500">{Math.round((result.score / result.total) * 100)}% correct</div>
+          <div className="text-slate-500">{(result.total ? Math.round((result.score / result.total) * 100) : 0)}% correct</div>
         </div>
         <div className="space-y-4">
-          {result.results.map((r, i) => (
+          {(result?.results || []).map((r, i) => (
             <div key={r.questionId} className={`card border-l-4 ${r.isCorrect ? 'border-green-500' : 'border-red-500'}`}>
               <div className="font-medium text-slate-800 mb-2">{i + 1}. {quiz.questions.find(q => q.id === r.questionId)?.question}</div>
               <div className="text-sm">
@@ -65,7 +65,7 @@ export default function TakeQuiz() {
     <div>
       <h1 className="text-2xl font-bold text-slate-800 mb-6">{quiz.title}</h1>
       <div className="space-y-6">
-        {quiz.questions.map((q, i) => (
+        {(quiz.questions || []).map((q, i) => (
           <div key={q.id} className="card">
             <div className="flex items-start justify-between gap-3 mb-3">
               <div className="font-medium text-slate-800">{i + 1}. {q.question}</div>
@@ -74,7 +74,7 @@ export default function TakeQuiz() {
               </button>
             </div>
             <div className="grid gap-2">
-              {q.options.map(opt => (
+              {(q.options || []).map(opt => (
                 <button key={opt} onClick={() => select(q.id, opt)}
                   className={`text-left px-4 py-2.5 rounded-xl border transition ${answers[q.id] === opt ? 'border-brand-600 bg-brand-50 text-brand-700' : 'border-slate-200 hover:bg-slate-50'}`}>
                   {opt}

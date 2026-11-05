@@ -3,7 +3,7 @@
 A full-stack app that lets students upload reading materials/modules and generate reviewers (quizzes or flashcards), with a Pomodoro timer, progress analytics, streaks, and personalized study plans.
 
 ## Structure
-- `backend/` — Node.js + Express + lowdb (JSON storage)
+- `backend/` — Node.js + Express + SQLite (node:sqlite)
 - `frontend/` — React + Vite + TailwindCSS
 
 ## Run (development)

@@ -8,28 +8,24 @@ export default function Flashcards() {
   const [idx, setIdx] = useState(0);
   const [flipped, setFlipped] = useState(false);
 
-  useEffect(() => { api.get('/flashcards').then(r => setSets(r.data)); }, []);
+  useEffect(() => { api.get('/flashcards').then(r => setSets(r.data || [])).catch(() => setSets([])); }, []);
 
-  const openSet = async (id) => {
-    const r = await api.get(`/flashcards/${id}`);
-    setActive(r.data);
-    setIdx(0);
-    setFlipped(false);
-  };
+  const openSet = async (id) => { try { const r = await api.get(`/flashcards/${id}`); setActive(r.data || null); setIdx(0); setFlipped(false); } catch { console.error('Failed to open set'); } };
 
   const markReviewed = async (reviewed) => {
     if (active) await api.post(`/flashcards/${active.id}/review`, { reviewed });
   };
 
   if (active) {
-    const card = active.cards[idx];
-    const done = idx >= active.cards.length;
+    const cards = Array.isArray(active.cards) ? active.cards : [];
+    const card = cards[idx];
+    const done = idx >= cards.length;
     if (done) {
       return (
         <div className="card text-center">
           <h2 className="text-2xl font-bold text-slate-800 mb-2">All done! 🎉</h2>
-          <p className="text-slate-500 mb-4">You reviewed {active.cards.length} cards.</p>
-          <button onClick={() => { markReviewed(active.cards.length); setActive(null); }} className="btn-primary">Back to sets</button>
+          <p className="text-slate-500 mb-4">You reviewed {cards.length} cards.</p>
+          <button onClick={() => { markReviewed(cards.length); setActive(null); }} className="btn-primary">Back to sets</button>
         </div>
       );
     }
@@ -37,10 +33,10 @@ export default function Flashcards() {
       <div>
         <div className="flex justify-between items-center mb-4">
           <button onClick={() => setActive(null)} className="btn-ghost">← Back</button>
-          <span className="text-sm text-slate-500">{idx + 1} / {active.cards.length}</span>
+          <span className="text-sm text-slate-500">{idx + 1} / {cards.length}</span>
         </div>
         <div className="card min-h-[260px] flex flex-col items-center justify-center text-center cursor-pointer" onClick={() => setFlipped(f => !f)}>
-          <div className="text-lg font-medium text-slate-800 mb-2">{flipped ? card.back : card.front}</div>
+          <div className="text-lg font-medium text-slate-800 mb-2">{flipped ? (card?.back || "") : (card?.front || "")}</div>
           {!flipped && card.hint && <div className="text-xs text-slate-400">{card.hint}</div>}
           <div className="text-xs text-slate-400 mt-4 flex items-center gap-1"><RotateCw size={12}/> Click to flip</div>
         </div>
@@ -56,7 +52,7 @@ export default function Flashcards() {
     <div>
       <h1 className="text-3xl font-bold text-slate-800 mb-6">Flashcards</h1>
       <div className="grid md:grid-cols-2 gap-4">
-        {sets.map(s => (
+        {(sets || []).map(s => (
           <div key={s.id} className="card">
             <div className="flex items-center gap-3 mb-2">
               <Layers className="text-brand-600" />

@@ -26,6 +26,7 @@ router.post('/upload', upload.single('file'), async (req, res) => {
     const fs = await import('fs');
     const buffer = fs.readFileSync(file.path);
     const text = await extractText(buffer, file.mimetype, file.originalname);
+const safeText = text == null ? '' : String(text);
     const db = getDb();
     const mat = {
       id: uuidv4(),
@@ -33,14 +34,14 @@ router.post('/upload', upload.single('file'), async (req, res) => {
       title: req.body.title || file.originalname,
       filename: file.originalname,
       mimetype: file.mimetype,
-      text,
+       text: safeText,
       createdAt: new Date().toISOString()
     };
     db.data.materials.push(mat);
     await save();
     // cleanup file
     try { fs.unlinkSync(file.path); } catch {}
-    res.json({ id: mat.id, title: mat.title, length: text.length, createdAt: mat.createdAt });
+    res.json({ id: mat.id, title: mat.title, length: safeText.length, createdAt: mat.createdAt });
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
